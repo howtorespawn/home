@@ -1,0 +1,110 @@
+.forms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #273838;
+    color: aliceblue;
+    font-family: tanker;
+    .body1{
+      width: 80vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+.form-content{
+  /* background: #13121A; */
+  
+  border-bottom: 4px grey solid;
+  border-right: 4px #070707 solid;
+  box-shadow: -5px -3px #0000002a;
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.form-info{
+  backdrop-filter: blur(1px);
+  width: 50%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-left: 5px white solid;
+  border-radius: 10px;
+  padding: 10px 0px 20px 10px;
+  
+  p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    margin-bottom: 0px;
+  }
+  h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: clash;
+    text-decoration: white underline;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-top: 0px;
+  }
+  .form-info-heading{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .line{
+    position: absolute;
+    left: 0;
+    width: 15px;
+    height: 3px;
+    background: white;
+  }
+  .line2{
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 4px;
+    background: #67C15E;
+  }
+  .line3{
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 4px;
+    background: #8791F6;
+  }
+  .form-info-heading:nth-child(1){
+    margin-top: 0;
+  }
+  img{
+    height: 2rem;
+    padding-right: 10px;
+  }
+}
+.form-content{
+    --s: 84px; /* control the size*/
+    --c1: #466565;
+    --c2: #314747;
+    --c3: #1d2929;
+    
+    --_g: 0 120deg,#0000 0;
+    background:
+      conic-gradient(from    0deg at calc(500%/6) calc(100%/3),var(--c3) var(--_g)),
+      conic-gradient(from -120deg at calc(100%/6) calc(100%/3),var(--c2) var(--_g)),
+      conic-gradient(from  120deg at calc(100%/3) calc(500%/6),var(--c1) var(--_g)),
+      conic-gradient(from  120deg at calc(200%/3) calc(500%/6),var(--c1) var(--_g)),
+      conic-gradient(from -180deg at calc(100%/3) 50%,var(--c2)  60deg,var(--c1) var(--_g)),
+      conic-gradient(from   60deg at calc(200%/3) 50%,var(--c1)  60deg,var(--c3) var(--_g)),
+      conic-gradient(from  -60deg at 50% calc(100%/3),var(--c1) 120deg,var(--c2) 0 240deg,var(--c3) 0);
+    background-size: calc(var(--s)*1.732) var(--s);
+}
+@media (max-width:800px) {
+  .form-info{
+    width: 100%;
+    backdrop-filter: blur(0);
+  }
+}

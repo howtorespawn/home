@@ -1,0 +1,188 @@
+.header-menu{
+    background-color: #354b4b;
+    width: 100vw;
+    height: calc(100vh);
+    display: flex;
+    justify-content: center;
+}
+.header-menu > div{
+    margin-top: 88px;
+    width: 40vw;
+    height: calc(100vh - 88px);
+}
+.header-left>p{
+    font-size: 1.8rem;
+    font-family: clash;
+}
+.header-left>h1{
+    font-size: 4rem;
+}
+.header-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.card-container{
+    background-color: #2A3C3C;
+	border-radius: 12px;
+    border: 1px #3b3b3b solid;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #d9e0fc;
+	padding-top: 30px;
+	width: 350px;
+	max-width: 100%;
+	text-align: center;
+
+    h3 {
+        margin: 10px 0;
+    }
+    h6 {
+        margin: 5px 0;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .skills {
+        font-family: clash;
+        border-top: #3b3b3b 1px solid;
+        text-align: left;
+        padding: 15px;
+        margin-top: 30px;
+        border-radius: 0px 0px 12px 12px;
+    }
+    .skills ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .skills ul li {
+        border: 1px solid #2D2747;
+        border-radius: 2px;
+        display: inline-block;
+        font-size: 12px;
+        margin: 0 7px 7px 0;
+        padding: 7px;
+        background-color: #304646;
+    }
+    .round {
+        border-radius: 50%;
+        border: 2px solid #03BFCB;
+        padding: 2px;
+        animation: round 3s infinite;
+    }
+}
+@keyframes round {
+    0%{
+        border: solid #5daa67;
+
+    }
+    50%{
+        border: solid #608eac;
+        /* border: solid #4a7283; */
+    }
+    100%{
+        border: solid #5daa67;
+    }
+}
+.bn13 {
+    display: inline-block;
+    padding: 0.65em 1.6em;
+    border: 3px solid #ffffff;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    background-color: #fff;
+    color: #000000;
+    text-align: center;
+    transition: all 0.2s;
+}
+.bn13:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+}
+.bn13:nth-child(2) {
+    background-color: #00000000;
+    color: #fff;
+}
+.bn13:hover:nth-child(2) {
+    background-color: #fff;
+    color: #000000;
+}
+.pattren {
+    width: 100%;
+    height: 100%;
+    /* Add your background pattern here */
+    background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px -5px;
+    animation: pattren 1s infinite;
+}
+@keyframes pattren {
+    0%{
+        background-position: -5px -5px;
+        background-image: radial-gradient(rgba(255, 255, 255, 0.171) 3px, transparent 0);
+    }
+    50%{
+        background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
+
+    }
+    100%{
+        background-image: radial-gradient(rgba(255, 255, 255, 0.171) 3px, transparent 0);
+        background-position: -33px -33px;
+
+    }
+}
+@media (max-width:1280px) {
+    .header-menu > div{
+        margin-top: 88px;
+        width: 45vw;
+        height: calc(100vh - 88px);
+    }
+}
+@media (max-width:1000px) {
+    .header-menu{
+        padding-top: 64px;
+        width: 100vw;
+        height: calc(100vh - 64px);
+    }
+    .header-menu > div{
+        margin: 30px;
+        width: 90vw;
+        height: auto;
+    }
+    .header-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-;
+        align-items: center;
+    }
+}
+@media (max-width:700px) {
+    .header-right{
+        display: none;
+    }
+    .header-left{
+        text-align: center;
+    }
+    .header-left>p{
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family: clash;
+    }
+    .header-left>h1{
+        font-size: 3rem;
+    }
+}

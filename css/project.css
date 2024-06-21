@@ -1,0 +1,64 @@
+.project{
+    display: flex;
+    justify-content: center;
+    background-color: #274141;
+    color: rgb(249, 250, 252);
+    box-sizing: content-box;
+    font-family: tanker;
+    padding: 50px 0px 50px 0px;
+}
+.project-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.project-cards{
+    background-color: #242824;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: var(--pcard-width);
+    height: var(--pcard-height);
+    border: 1px #383838 solid;
+    display: grid;
+    border-bottom: 3px rgb(119, 118, 118) solid;
+    border-right: 3px rgb(27, 27, 27) solid;
+    .project-img{
+        height: calc(var(--pcard-height) - 100px);
+        background-size: cover;
+        background-position: top;
+        border-bottom:1px #383838 solid;
+    }
+    #project1{
+        background-image: url(../media/project/home.jpg);
+    }
+    #project2{
+        background-image: url(../media/project/gallery.jpg);
+    }
+    #project3{
+        background-image: url(../media/project/home.jpg);
+    }
+    .project-card-content{
+        font-weight: 500;
+        padding: 10px;
+        font-size: 1.9rem;
+        height: calc(var(--pcard-height) - 4000px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:1200px) {
+    :root{
+        --pcard-height:400px;
+        --pcard-width: 200px;
+    }
+    .project{
+        .project-card-content{
+            font-size: 1.5rem;
+        }
+    }
+}
